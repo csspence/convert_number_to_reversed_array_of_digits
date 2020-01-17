@@ -10,6 +10,12 @@ Example:
 348597 => [7,9,5,8,4,3]
 */
 
-function digitize(n) {
-  //code here
+const digitize = (n) => {
+  const str = n.toString();
+  const arr = [];
+  for(let i = str.length - 1; i > -1; i--) {
+    arr.push(parseInt(str[i]));
+  }
+  
+  return arr;
 }
